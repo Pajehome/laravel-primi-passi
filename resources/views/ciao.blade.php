@@ -64,7 +64,9 @@
         </style>
     </head>
     <body>
-        <a href="{{route('great')}}">va su great</a>
+        <a href="{{route('great')}}">
+            {{ $nome }}
+        </a>
         
     </body>
 </html>

@@ -8,8 +8,8 @@
 </head>
 <body>
     
-<a href="{{route('ciao')}}">torna da ciao</a>
-<ul>
+<a href="{{route('ciao')}}">{{ $nome }}</a>
+        <ul>
             @foreach ($lista as $value)
              <li>{{ $value }}</li>
             @endforeach 

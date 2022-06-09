@@ -18,11 +18,15 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', function () {
-    return view('ciao');
+    $data = [
+        'nome' => 'Va su great'
+    ];
+    return view('ciao',$data);
 })->name('ciao');
 
 Route::get('/great', function () {
      $data = [
+         'nome' => 'Torna su Ciao',
          'lista' => [
             'Home',
             'Jobs',
