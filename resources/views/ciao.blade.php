@@ -65,6 +65,6 @@
     </head>
     <body>
         <a href="{{route('great')}}">va su great</a>
-        <h1>{{ $ciao }}</h1>
+        
     </body>
 </html>

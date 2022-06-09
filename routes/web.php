@@ -21,19 +21,16 @@ Route::get('/', function () {
     return view('ciao');
 })->name('ciao');
 
-Route::get('great', function () {
-    // $data = [
-    //     '1' => 'Home',
-    //     '2' => 'Jobs',
-    //     '3' => 'About us',
-    //     '4' => 'Contacti',
-    // ];
-     return view('great', [
-        'ciao' => 'Home',
-        // '2' => 'Jobs',
-        // '3' => 'About us',
-        // '4' => 'Contacti',
-    ]);  
+Route::get('/great', function () {
+     $data = [
+         'lista' => [
+            'Home',
+            'Jobs',
+            'About us',
+            'Contacti',
+         ]
+     ];
+     return view('great', $data);  
       
 })->name('great');
 

@@ -8,7 +8,11 @@
 </head>
 <body>
     
-<a href="{{route('great')}}">torna da ciao</a>
-<h1>{{$data}}</h1>
+<a href="{{route('ciao')}}">torna da ciao</a>
+<ul>
+            @foreach ($lista as $value)
+             <li>{{ $value }}</li>
+            @endforeach 
+        </ul>
 </body>
 </html>
